@@ -1,16 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Form = styled.div`
-  height: 60%;
-  overflow: auto;
-`;
 
 const FormContainer = () => {
   return (
-    <Form>
+    <div>
       FormContainer
-    </Form>
+    </div>
   );
 };
 

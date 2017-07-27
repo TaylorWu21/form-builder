@@ -3,21 +3,15 @@ import {
   Card, 
   Header,
 } from 'semantic-ui-react';
-import styled from 'styled-components';
 
 import Tools from './Panels/Tools';
 import Properties from './Panels/Properties';
 import Import from './Panels/Import';
 import Export from './Panels/Export';
 
-const Panel = styled.div`
-  height: 60%;
-  overflow: auto;
-`;
-
 const PanelContainer = () => {
   return (
-    <Panel>
+    <div>
       <Header as='h1' textAlign='center'>Form Builder</Header>
       <Card.Group>
         <Tools />
@@ -25,7 +19,7 @@ const PanelContainer = () => {
         <Import />
         <Export />
       </Card.Group>
-    </Panel>
+    </div>
   );
 };
 
